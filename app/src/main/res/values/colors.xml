@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="item_background">#FAFAFA</color>
+
+    <!--87%white-->
+    <color name="primary_text">#de000000</color>
+    <!--87%black-->
+    <color name="secondary_text">#8a000000</color>
+
+    <color name="swipeRefreshLayoutColor_1">#FF5252</color>
+    <color name="swipeRefreshLayoutColor_2">#FF4081</color>
+    <color name="swipeRefreshLayoutColor_3">#427FED</color>
+    <color name="swipeRefreshLayoutColor_4">#B23424</color>
+    <integer-array name="swipeRefreshLayoutColor">
+        <item>@color/swipeRefreshLayoutColor_1</item>
+        <item>@color/swipeRefreshLayoutColor_2</item>
+        <item>@color/swipeRefreshLayoutColor_3</item>
+        <item>@color/swipeRefreshLayoutColor_4</item>
+    </integer-array>
+
+</resources>
