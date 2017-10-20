@@ -11,6 +11,7 @@
 
 ## 前言
 一款 Material Design 风格的新闻App，采用 Mvp + RxJava + Retrofit + Dagger2 设计模式，整体风格为  NavigationView + Fragment 开发。
+
 <img src="https://github.com/wz1509/NewsClient/blob/master/image/client_%20navigation_view.jpg?raw=true" width="200" hight="356" alt="navigation_view.jpg" title="navigation_view.jpg" />
 
 ## 项目截图
