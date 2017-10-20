@@ -1,10 +1,10 @@
 # NewsClient
----
-title: Android Material Design 风格的新闻App
-date: 2017-10-20 14:02:04
-categories: ["Android","开源项目"]
-tags: ["开源项目"]
----
+# ---
+# title: Android Material Design 风格的新闻App
+# date: 2017-10-20 14:02:04
+# categories: ["Android","开源项目"]
+# tags: ["开源项目"]
+# ---
 
 [1]:https://github.com/ReactiveX/RxJava
 [2]:https://github.com/ReactiveX/RxAndroid
