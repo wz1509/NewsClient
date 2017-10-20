@@ -24,6 +24,7 @@ import me.threebears.news.model.entity.NewsEntity;
 /**
  * Created by threebears on 2017/10/11.
  * 新闻adapter
+ * @author threebears
  */
 
 public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

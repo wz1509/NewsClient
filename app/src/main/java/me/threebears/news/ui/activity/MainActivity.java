@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import me.threebears.news.R;
@@ -94,6 +95,9 @@ public class MainActivity extends BaseActivity implements
             setDefaultFragment(2);
         } else if (id == R.id.nav_gank_io_girl) {
             setDefaultFragment(3);
+        } else if (id == R.id.nav_about){
+            Toast.makeText(this, "维护中...", Toast.LENGTH_SHORT).show();
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

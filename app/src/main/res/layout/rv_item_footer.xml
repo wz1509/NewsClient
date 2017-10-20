@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/view_loading"
-              android:layout_width="match_parent"
-              android:layout_height="48dp"
-              android:gravity="center"
-              android:orientation="horizontal">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_loading"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:orientation="horizontal">
 
     <ProgressBar
         android:id="@+id/pb_loading"
@@ -18,6 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginStart="5dp"
-        android:text="更多加载中..."/>
+        tools:text="更多加载中..."/>
 
 </LinearLayout>

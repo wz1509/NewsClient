@@ -17,15 +17,12 @@
 package me.threebears.news.ui.adapter.base;
 
 import android.content.Context;
-import android.support.annotation.AnimRes;
 import android.support.annotation.LayoutRes;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -38,8 +35,8 @@ import me.threebears.news.listener.OnReloadClickListener;
 import me.threebears.news.ui.adapter.BaseViewHolder;
 
 /**
- * @author 咖枯
- * @version 1.0 2016/8/6
+ * Created by threebears on 2017/10/11.
+ * @author threebears
  */
 public abstract class BaseRecyclerViewAdapter<T> extends
         RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -133,15 +130,6 @@ public abstract class BaseRecyclerViewAdapter<T> extends
         return TYPE_ITEM;
     }
 
-    protected void setItemAppearAnimation(RecyclerView.ViewHolder holder, int position,
-                                          @AnimRes int type) {
-        if (position > mLastPosition) {
-            Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), type);
-            holder.itemView.startAnimation(animation);
-            mLastPosition = position;
-        }
-    }
-
     public void setData(List<T> data) {
         mList.clear();
         mList.addAll(data);
@@ -149,10 +137,7 @@ public abstract class BaseRecyclerViewAdapter<T> extends
     }
 
     public void addMoreData(List<T> data) {
-        // int startPosition = mList.size();
         mList.addAll(data);
-        // 此处用这个会造成数组越界，待修复
-        // notifyItemRangeInserted(startPosition, mList.size());
         notifyDataSetChanged();
     }
 
